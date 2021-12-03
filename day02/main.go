@@ -59,7 +59,7 @@ func main() {
 	diff := done.Sub(start)
 	fmt.Printf("Part 1: hPos (%d) * p1Depth (%d) = %d\n", last.hPos, last.p1Depth, p1Sum)
 	fmt.Printf("Part 2: hPos (%d) * p2Depth (%d) = %d\n", last.hPos, last.p2Depth, p2Sum)
-	fmt.Printf("Execution time: %f\n", diff.Seconds())
+	fmt.Printf("Execution time: %d µSeconds\n", diff.Microseconds())
 }
 
 func importData() ([]dataT, error) {

@@ -41,7 +41,7 @@ func main() {
 	diff := done.Sub(start)
 	fmt.Printf("Part 1: Found %d depth increases\n", incCount)
 	fmt.Printf("Part 2: Found %d three-sum sliding increases\n", sumCount)
-	fmt.Printf("Execution time: %f\n", diff.Seconds())
+	fmt.Printf("Execution time: %d µSeconds\n", diff.Microseconds())
 }
 
 func importData() ([]dataT, error) {
