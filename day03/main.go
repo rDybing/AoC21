@@ -33,8 +33,8 @@ func main() {
 	sum := uint32(rate.gamma) * uint32(rate.epsilon)
 	done := time.Now()
 	diff := done.Sub(start)
-	fmt.Printf("Part 1: Gamma (%012b) %d * Epsilon(%012b) %d = (%016b) %d\n%+v\n",
-		rate.gamma, rate.gamma, rate.epsilon, rate.epsilon, sum, sum, rate)
+	fmt.Printf("Part 1: Gamma (%012b) %d * Epsilon(%012b) %d = (%032b) %d\n",
+		rate.gamma, rate.gamma, rate.epsilon, rate.epsilon, sum, sum)
 	fmt.Printf("Execution time: %d µSeconds\n", diff.Microseconds())
 }
 

@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestAddBitSum(t *testing.T) {
+func TestPart1(t *testing.T) {
 	d := []dataT{
 		{bin: 0b100100110110},
 		{bin: 0b101110110110},
